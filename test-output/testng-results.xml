@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="28" passed="22" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-22T09:13:50 BST" name="Orange HRM Regression Suite" finished-at="2022-08-22T09:16:01 BST" duration-ms="130680">
+    <groups>
+    </groups>
+    <test started-at="2022-08-22T09:13:50 BST" name="Orange HRM Regression Test --firefox" finished-at="2022-08-22T09:15:59 BST" duration-ms="128537">
+      <class name="com.qa.orangehrm.tests.LoginPageTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@ce8b59e]" started-at="2022-08-22T09:13:51 BST" name="setUp" finished-at="2022-08-22T09:14:14 BST" duration-ms="22641" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLoginPageTitleTest()[pri:1, instance:com.qa.orangehrm.tests.LoginPageTest@ce8b59e]" started-at="2022-08-22T09:14:14 BST" name="verifyLoginPageTitleTest" description="verify page title method" finished-at="2022-08-22T09:14:14 BST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@ce8b59e]" started-at="2022-08-22T09:14:14 BST" name="tearDown" finished-at="2022-08-22T09:14:14 BST" duration-ms="811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@ce8b59e]" started-at="2022-08-22T09:14:14 BST" name="setUp" finished-at="2022-08-22T09:14:30 BST" duration-ms="15279" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyForgetPassLink()[pri:2, instance:com.qa.orangehrm.tests.LoginPageTest@ce8b59e]" started-at="2022-08-22T09:14:30 BST" name="verifyForgetPassLink" description="verify sign up link is displayed" finished-at="2022-08-22T09:14:31 BST" duration-ms="727" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyForgetPassLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@ce8b59e]" started-at="2022-08-22T09:14:31 BST" name="tearDown" finished-at="2022-08-22T09:14:32 BST" duration-ms="1050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@ce8b59e]" started-at="2022-08-22T09:14:32 BST" name="setUp" finished-at="2022-08-22T09:14:44 BST" duration-ms="12050" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginTest()[pri:3, instance:com.qa.orangehrm.tests.LoginPageTest@ce8b59e]" started-at="2022-08-22T09:14:44 BST" name="LoginTest" description="verify valid login credentials" finished-at="2022-08-22T09:14:47 BST" duration-ms="3465" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Lolita S] but found [null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Lolita S] but found [null]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.qa.orangehrm.tests.LoginPageTest.LoginTest(LoginPageTest.java:91)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@ce8b59e]" started-at="2022-08-22T09:14:48 BST" name="tearDown" finished-at="2022-08-22T09:14:49 BST" duration-ms="965" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.orangehrm.tests.LoginPageTest -->
+      <class name="com.qa.orangehrm.tests.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.orangehrm.tests.HomePageTest@29f114e0]" started-at="2022-08-22T09:13:51 BST" name="setUp" finished-at="2022-08-22T09:14:14 BST" duration-ms="23471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyHomePageUrl()[pri:1, instance:com.qa.orangehrm.tests.HomePageTest@29f114e0]" started-at="2022-08-22T09:14:14 BST" name="verifyHomePageUrl" description="verify account name" finished-at="2022-08-22T09:14:16 BST" duration-ms="1975" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageUrl -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.HomePageTest@29f114e0]" started-at="2022-08-22T09:14:16 BST" name="tearDown" finished-at="2022-08-22T09:14:17 BST" duration-ms="339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.orangehrm.tests.HomePageTest@29f114e0]" started-at="2022-08-22T09:14:17 BST" name="setUp" finished-at="2022-08-22T09:14:32 BST" duration-ms="14927" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyHomePageTitle()[pri:2, instance:com.qa.orangehrm.tests.HomePageTest@29f114e0]" started-at="2022-08-22T09:14:32 BST" name="verifyHomePageTitle" description="verify home page title" finished-at="2022-08-22T09:14:34 BST" duration-ms="1896" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.HomePageTest@29f114e0]" started-at="2022-08-22T09:14:34 BST" name="tearDown" finished-at="2022-08-22T09:14:34 BST" duration-ms="231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.orangehrm.tests.HomePageTest@29f114e0]" started-at="2022-08-22T09:14:34 BST" name="setUp" finished-at="2022-08-22T09:14:49 BST" duration-ms="14829" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyhomePageHeader()[pri:3, instance:com.qa.orangehrm.tests.HomePageTest@29f114e0]" started-at="2022-08-22T09:14:49 BST" name="verifyhomePageHeader" description="verify home page header" finished-at="2022-08-22T09:14:50 BST" duration-ms="891" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyhomePageHeader -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.HomePageTest@29f114e0]" started-at="2022-08-22T09:14:50 BST" name="tearDown" finished-at="2022-08-22T09:14:50 BST" duration-ms="172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.orangehrm.tests.HomePageTest@29f114e0]" started-at="2022-08-22T09:14:50 BST" name="setUp" finished-at="2022-08-22T09:15:00 BST" duration-ms="10306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyAccountName()[pri:4, instance:com.qa.orangehrm.tests.HomePageTest@29f114e0]" started-at="2022-08-22T09:15:00 BST" name="verifyAccountName" description="verify account name" finished-at="2022-08-22T09:15:03 BST" duration-ms="2580" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Lolita S] but found [Manoj c]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Lolita S] but found [Manoj c]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.qa.orangehrm.tests.HomePageTest.verifyAccountName(HomePageTest.java:51)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAccountName -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.HomePageTest@29f114e0]" started-at="2022-08-22T09:15:03 BST" name="tearDown" finished-at="2022-08-22T09:15:03 BST" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.orangehrm.tests.HomePageTest -->
+      <class name="com.qa.orangehrm.tests.AddEmployeeTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@6c569caf]" started-at="2022-08-22T09:13:54 BST" name="setUp" finished-at="2022-08-22T09:14:13 BST" duration-ms="19029" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addEmployeeTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@6c569caf]" started-at="2022-08-22T09:14:13 BST" name="addEmployeeTest" data-provider="getEmployeeNamesTestData" finished-at="2022-08-22T09:14:22 BST" duration-ms="9347" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[esra]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[merve]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[kilic]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployeeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@6c569caf]" started-at="2022-08-22T09:14:23 BST" name="tearDown" finished-at="2022-08-22T09:14:23 BST" duration-ms="285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@6c569caf]" started-at="2022-08-22T09:14:23 BST" name="setUp" finished-at="2022-08-22T09:14:37 BST" duration-ms="14372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addEmployeeTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@6c569caf]" started-at="2022-08-22T09:14:37 BST" name="addEmployeeTest" data-provider="getEmployeeNamesTestData" finished-at="2022-08-22T09:14:44 BST" duration-ms="6356" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[meryem ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[banu]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[kaya]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployeeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@6c569caf]" started-at="2022-08-22T09:14:44 BST" name="tearDown" finished-at="2022-08-22T09:14:44 BST" duration-ms="317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@6c569caf]" started-at="2022-08-22T09:14:44 BST" name="setUp" finished-at="2022-08-22T09:14:54 BST" duration-ms="10474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addEmployeeTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@6c569caf]" started-at="2022-08-22T09:14:54 BST" name="addEmployeeTest" data-provider="getEmployeeNamesTestData" finished-at="2022-08-22T09:15:01 BST" duration-ms="6948" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[muteber]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aylin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[kucuk]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployeeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@6c569caf]" started-at="2022-08-22T09:15:01 BST" name="tearDown" finished-at="2022-08-22T09:15:01 BST" duration-ms="134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@6c569caf]" started-at="2022-08-22T09:15:01 BST" name="setUp" finished-at="2022-08-22T09:15:12 BST" duration-ms="10093" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addEmployeeTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@6c569caf]" started-at="2022-08-22T09:15:12 BST" name="addEmployeeTest" data-provider="getEmployeeNamesTestData" finished-at="2022-08-22T09:15:22 BST" duration-ms="10739" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[yunus ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[emre]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[koc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployeeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@6c569caf]" started-at="2022-08-22T09:15:22 BST" name="tearDown" finished-at="2022-08-22T09:15:22 BST" duration-ms="147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@6c569caf]" started-at="2022-08-22T09:15:22 BST" name="setUp" finished-at="2022-08-22T09:15:33 BST" duration-ms="10626" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addEmployeeTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@6c569caf]" started-at="2022-08-22T09:15:33 BST" name="addEmployeeTest" data-provider="getEmployeeNamesTestData" finished-at="2022-08-22T09:15:40 BST" duration-ms="7082" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ahmet]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mucteba]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[bay]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployeeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@6c569caf]" started-at="2022-08-22T09:15:40 BST" name="tearDown" finished-at="2022-08-22T09:15:40 BST" duration-ms="157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@6c569caf]" started-at="2022-08-22T09:15:40 BST" name="setUp" finished-at="2022-08-22T09:15:52 BST" duration-ms="11370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addEmployeeTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@6c569caf]" started-at="2022-08-22T09:15:52 BST" name="addEmployeeTest" data-provider="getEmployeeNamesTestData" finished-at="2022-08-22T09:15:59 BST" duration-ms="7010" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[muhammed]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mustafa]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[karabacak]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployeeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@6c569caf]" started-at="2022-08-22T09:15:59 BST" name="tearDown" finished-at="2022-08-22T09:15:59 BST" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.orangehrm.tests.AddEmployeeTest -->
+    </test> <!-- Orange HRM Regression Test -firefox -->
+    <test started-at="2022-08-22T09:13:50 BST" name="Orange HRM Regression Test --chrome" finished-at="2022-08-22T09:16:01 BST" duration-ms="130680">
+      <class name="com.qa.orangehrm.tests.LoginPageTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@15ae31b]" started-at="2022-08-22T09:13:51 BST" name="setUp" finished-at="2022-08-22T09:14:12 BST" duration-ms="20865" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLoginPageTitleTest()[pri:1, instance:com.qa.orangehrm.tests.LoginPageTest@15ae31b]" started-at="2022-08-22T09:14:12 BST" name="verifyLoginPageTitleTest" description="verify page title method" finished-at="2022-08-22T09:14:12 BST" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@15ae31b]" started-at="2022-08-22T09:14:12 BST" name="tearDown" finished-at="2022-08-22T09:14:13 BST" duration-ms="529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@15ae31b]" started-at="2022-08-22T09:14:13 BST" name="setUp" finished-at="2022-08-22T09:14:23 BST" duration-ms="10330" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyForgetPassLink()[pri:2, instance:com.qa.orangehrm.tests.LoginPageTest@15ae31b]" started-at="2022-08-22T09:14:23 BST" name="verifyForgetPassLink" description="verify sign up link is displayed" finished-at="2022-08-22T09:14:24 BST" duration-ms="1309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyForgetPassLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@15ae31b]" started-at="2022-08-22T09:14:24 BST" name="tearDown" finished-at="2022-08-22T09:14:26 BST" duration-ms="2111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@15ae31b]" started-at="2022-08-22T09:14:26 BST" name="setUp" finished-at="2022-08-22T09:14:37 BST" duration-ms="10539" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginTest()[pri:3, instance:com.qa.orangehrm.tests.LoginPageTest@15ae31b]" started-at="2022-08-22T09:14:37 BST" name="LoginTest" description="verify valid login credentials" finished-at="2022-08-22T09:14:42 BST" duration-ms="4792" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Lolita S] but found [Manoj c]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Lolita S] but found [Manoj c]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.qa.orangehrm.tests.LoginPageTest.LoginTest(LoginPageTest.java:91)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@15ae31b]" started-at="2022-08-22T09:14:42 BST" name="tearDown" finished-at="2022-08-22T09:14:42 BST" duration-ms="445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.orangehrm.tests.LoginPageTest -->
+      <class name="com.qa.orangehrm.tests.AddEmployeeTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@3e729d46]" started-at="2022-08-22T09:13:54 BST" name="setUp" finished-at="2022-08-22T09:14:15 BST" duration-ms="20506" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addEmployeeTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@3e729d46]" started-at="2022-08-22T09:14:15 BST" name="addEmployeeTest" data-provider="getEmployeeNamesTestData" finished-at="2022-08-22T09:14:24 BST" duration-ms="9798" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[esra]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[merve]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[kilic]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployeeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@3e729d46]" started-at="2022-08-22T09:14:24 BST" name="tearDown" finished-at="2022-08-22T09:14:25 BST" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@3e729d46]" started-at="2022-08-22T09:14:25 BST" name="setUp" finished-at="2022-08-22T09:14:36 BST" duration-ms="11629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addEmployeeTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@3e729d46]" started-at="2022-08-22T09:14:36 BST" name="addEmployeeTest" data-provider="getEmployeeNamesTestData" finished-at="2022-08-22T09:14:45 BST" duration-ms="9161" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[meryem ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[banu]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[kaya]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployeeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@3e729d46]" started-at="2022-08-22T09:14:45 BST" name="tearDown" finished-at="2022-08-22T09:14:46 BST" duration-ms="1094" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@3e729d46]" started-at="2022-08-22T09:14:46 BST" name="setUp" finished-at="2022-08-22T09:14:58 BST" duration-ms="11747" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addEmployeeTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@3e729d46]" started-at="2022-08-22T09:14:58 BST" name="addEmployeeTest" data-provider="getEmployeeNamesTestData" finished-at="2022-08-22T09:15:06 BST" duration-ms="7264" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[muteber]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aylin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[kucuk]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployeeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@3e729d46]" started-at="2022-08-22T09:15:06 BST" name="tearDown" finished-at="2022-08-22T09:15:06 BST" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@3e729d46]" started-at="2022-08-22T09:15:06 BST" name="setUp" finished-at="2022-08-22T09:15:16 BST" duration-ms="10804" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addEmployeeTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@3e729d46]" started-at="2022-08-22T09:15:16 BST" name="addEmployeeTest" data-provider="getEmployeeNamesTestData" finished-at="2022-08-22T09:15:24 BST" duration-ms="7589" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[yunus ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[emre]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[koc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployeeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@3e729d46]" started-at="2022-08-22T09:15:24 BST" name="tearDown" finished-at="2022-08-22T09:15:24 BST" duration-ms="148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@3e729d46]" started-at="2022-08-22T09:15:24 BST" name="setUp" finished-at="2022-08-22T09:15:35 BST" duration-ms="11264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addEmployeeTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@3e729d46]" started-at="2022-08-22T09:15:35 BST" name="addEmployeeTest" data-provider="getEmployeeNamesTestData" finished-at="2022-08-22T09:15:43 BST" duration-ms="7300" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ahmet]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mucteba]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[bay]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployeeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@3e729d46]" started-at="2022-08-22T09:15:43 BST" name="tearDown" finished-at="2022-08-22T09:15:43 BST" duration-ms="149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@3e729d46]" started-at="2022-08-22T09:15:43 BST" name="setUp" finished-at="2022-08-22T09:15:54 BST" duration-ms="10750" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addEmployeeTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@3e729d46]" started-at="2022-08-22T09:15:54 BST" name="addEmployeeTest" data-provider="getEmployeeNamesTestData" finished-at="2022-08-22T09:16:01 BST" duration-ms="7144" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[muhammed]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mustafa]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[karabacak]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployeeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@3e729d46]" started-at="2022-08-22T09:16:01 BST" name="tearDown" finished-at="2022-08-22T09:16:01 BST" duration-ms="195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.orangehrm.tests.AddEmployeeTest -->
+      <class name="com.qa.orangehrm.tests.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.orangehrm.tests.HomePageTest@428e9be2]" started-at="2022-08-22T09:13:51 BST" name="setUp" finished-at="2022-08-22T09:14:13 BST" duration-ms="21972" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyHomePageUrl()[pri:1, instance:com.qa.orangehrm.tests.HomePageTest@428e9be2]" started-at="2022-08-22T09:14:13 BST" name="verifyHomePageUrl" description="verify account name" finished-at="2022-08-22T09:14:15 BST" duration-ms="1978" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageUrl -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.HomePageTest@428e9be2]" started-at="2022-08-22T09:14:15 BST" name="tearDown" finished-at="2022-08-22T09:14:15 BST" duration-ms="345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.orangehrm.tests.HomePageTest@428e9be2]" started-at="2022-08-22T09:14:15 BST" name="setUp" finished-at="2022-08-22T09:14:28 BST" duration-ms="12270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyHomePageTitle()[pri:2, instance:com.qa.orangehrm.tests.HomePageTest@428e9be2]" started-at="2022-08-22T09:14:28 BST" name="verifyHomePageTitle" description="verify home page title" finished-at="2022-08-22T09:14:30 BST" duration-ms="2156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.HomePageTest@428e9be2]" started-at="2022-08-22T09:14:30 BST" name="tearDown" finished-at="2022-08-22T09:14:30 BST" duration-ms="470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.orangehrm.tests.HomePageTest@428e9be2]" started-at="2022-08-22T09:14:30 BST" name="setUp" finished-at="2022-08-22T09:14:41 BST" duration-ms="10703" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyhomePageHeader()[pri:3, instance:com.qa.orangehrm.tests.HomePageTest@428e9be2]" started-at="2022-08-22T09:14:41 BST" name="verifyhomePageHeader" description="verify home page header" finished-at="2022-08-22T09:14:45 BST" duration-ms="3797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyhomePageHeader -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.HomePageTest@428e9be2]" started-at="2022-08-22T09:14:45 BST" name="tearDown" finished-at="2022-08-22T09:14:46 BST" duration-ms="1632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.orangehrm.tests.HomePageTest@428e9be2]" started-at="2022-08-22T09:14:46 BST" name="setUp" finished-at="2022-08-22T09:14:57 BST" duration-ms="10909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyAccountName()[pri:4, instance:com.qa.orangehrm.tests.HomePageTest@428e9be2]" started-at="2022-08-22T09:14:57 BST" name="verifyAccountName" description="verify account name" finished-at="2022-08-22T09:15:00 BST" duration-ms="2823" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Lolita S] but found [Manoj c]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Lolita S] but found [Manoj c]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.qa.orangehrm.tests.HomePageTest.verifyAccountName(HomePageTest.java:51)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAccountName -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.HomePageTest@428e9be2]" started-at="2022-08-22T09:15:00 BST" name="tearDown" finished-at="2022-08-22T09:15:00 BST" duration-ms="189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.orangehrm.tests.HomePageTest -->
+    </test> <!-- Orange HRM Regression Test -chrome -->
+  </suite> <!-- Orange HRM Regression Suite -->
+</testng-results>
